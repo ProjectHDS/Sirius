@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+.idea/.idea.Sirius/.idea/.gitignore
+.idea/.idea.Sirius/.idea/discord.xml
+.idea/.idea.Sirius/.idea/encodings.xml
+.idea/.idea.Sirius/.idea/indexLayout.xml
+.idea/.idea.Sirius/.idea/riderMarkupCache.xml
+.idea/.idea.Sirius/.idea/vcs.xml
