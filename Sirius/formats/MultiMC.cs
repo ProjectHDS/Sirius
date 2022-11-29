@@ -6,7 +6,7 @@ using J = JsonPropertyNameAttribute;
 
 public class MultiMC : IFormatTemplate
 {
-    public string FormatName { get; set; };
+    public string FormatName { get; set; }
     public string FormatVendor { get; set; }
     public string FormatSupportAuthor { get; set; }
     public string CoreManifestFilePath { get; set; }
