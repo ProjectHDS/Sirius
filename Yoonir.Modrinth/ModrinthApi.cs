@@ -3,13 +3,13 @@ using Yoonir.Modrinth.Model;
 
 namespace Yoonir.Modrinth
 {
-    public class ModerinthApi
+    public class ModrinthApi
     {
         private const string API_BASE = "https://api.modrinth.com/v2";
         private HttpClient Client { get; set; } = new HttpClient();
         public string Key { private get; init; }
 
-        public ModerinthApi(string key)
+        public ModrinthApi(string key)
         {
             Key = key;
             Client.DefaultRequestHeaders.Add("Authorization", Key);

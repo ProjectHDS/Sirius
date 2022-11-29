@@ -4,7 +4,7 @@ namespace Yoonir;
 
 public partial class Yoonir
 {
-    private ModerinthApi? _modrinthApi;
+    private ModrinthApi? _modrinthApi;
     private CurseforgeApi? _curseforgeApi;
     public static Yoonir? Client { get; set; }
 
@@ -12,7 +12,7 @@ public partial class Yoonir
 
     private Yoonir(string curseforgeKey, string modrinthKey)
     {
-        _modrinthApi = new ModerinthApi(modrinthKey);
+        _modrinthApi = new ModrinthApi(modrinthKey);
         _curseforgeApi = new CurseforgeApi(curseforgeKey);
     }
     
@@ -24,7 +24,7 @@ public partial class Yoonir
                 _curseforgeApi = new CurseforgeApi(key);
                 break;
             case ApiType.Modrinth:
-                _modrinthApi = new ModerinthApi(key);
+                _modrinthApi = new ModrinthApi(key);
                 break;
         }
     }
