@@ -58,8 +58,3 @@ public class ModLoader
     [J("id")] public string Id { get; set; }
     [J("primary")] public bool Primary { get; set; }
 }
-
-[JsonSerializable(typeof(CurseManifest))]
-public partial class CurseManifestContext : JsonSerializerContext
-{
-}

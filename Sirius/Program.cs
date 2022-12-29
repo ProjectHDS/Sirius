@@ -1,31 +1,28 @@
-﻿using System.Text.Json;
+﻿using System.CommandLine;
+using System.Text.Json;
 using Serilog;
 
 namespace Sirius;
 
 class Program
 {
-    /// <summary>
-    /// Sirius Entry.
-    /// </summary>
-    /// <param name="siriusConfigPath">Sirius configuration file absolute path.</param>
-    /// <returns></returns>
-    /// <exception cref="NullReferenceException"></exception>
-    public static void Main(string siriusConfigPath = "./sirius.json")
+    public static void Main(string[] args)
     {
         Log.Logger = new LoggerConfiguration().Enrich.FromLogContext().MinimumLevel.Information().WriteTo.Console().CreateLogger();
-        
-        SiriusConfig config = LoadConfig(siriusConfigPath);
 
+        var rootCommand = new RootCommand("Sirius!");
+        var buildCommand = new Command("build", "build modpack to target format.");
+        var testCommand = new Command("test", "test modpack");
+        
     }
 
-    private static SiriusConfig? LoadConfig(string path)
+    private static SiriusConfig LoadConfig(string path)
     {
-        var config = JsonSerializer.Deserialize(File.ReadAllText(path), SiriusConfigContext.Default.SiriusConfig);
+        var config = JsonSerializer.Deserialize<SiriusConfig>(File.ReadAllText(path));
         if (config is null)
         {
             Log.Logger.Error("Can't read config!");
-            return null;
+            throw new FileNotFoundException("Can't read config");
         }
         return config;
     }

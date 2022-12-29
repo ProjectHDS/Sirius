@@ -51,8 +51,3 @@ public class CachedRequire
     [J("suggests")] public string Suggests { get; set; }
     [J("uid")] public string Uid { get; set; }
 }
-
-[JsonSerializable(typeof(MMCPack))]
-public partial class MMCPackContext : JsonSerializerContext
-{
-}

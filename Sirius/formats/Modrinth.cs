@@ -68,8 +68,3 @@ public class Dependencies
     [J("fabric-loader")] public string? FabricLoader { get; set; }
     [J("quilt-loader")] public string? QuiltLoader { get; set; }
 }
-
-[JsonSerializable(typeof(ModrinthManifest))]
-public partial class ModrinthManifestContext : JsonSerializerContext
-{
-}

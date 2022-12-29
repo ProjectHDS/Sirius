@@ -12,8 +12,3 @@ public class SiriusConfig
     [J("targetFormats")] public string[] TargetFormats { get; set; }
     [J("rootAbsolutePath")] public string RootAbsolutePath { get; set; }
 }
-
-[JsonSerializable(typeof(SiriusConfig))]
-public partial class SiriusConfigContext : JsonSerializerContext
-{
-}
