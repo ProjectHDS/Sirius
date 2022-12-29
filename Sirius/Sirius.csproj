@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="CurseForge.APIClient" Version="2.0.1" />
+    <PackageReference Include="LibGit2Sharp" Version="0.27.0-preview-0182" />
     <PackageReference Include="Modrinth.RestClient" Version="2.5.5" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.1-dev-00896" />
     <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />

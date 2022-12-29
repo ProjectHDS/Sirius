@@ -10,7 +10,7 @@ public class CurseForge : IFormatTemplate
     public string FormatVendor { get; set; }
     public string FormatSupportAuthor { get; set; }
     public string CoreManifestFilePath { get; set; }
-    public string PackFileFolderPath { get; set; }
+    public string? PackFileFolderPath { get; set; }
     public string FormatSubfix { get; set; }
     public string[]? ExtendedFormatFilePathes { get; set; }
 
@@ -31,14 +31,14 @@ public class CurseForge : IFormatTemplate
 /// </summary>
 public class CurseManifest
 {
-    [J("minecraft")] public Minecraft Minecraft { get; set; }
-    [J("manifestType")] public string ManifestType { get; set; }
+    [J("minecraft")] public Minecraft? Minecraft { get; set; }
+    [J("manifestType")] public string? ManifestType { get; set; }
     [J("manifestVersion")] public long ManifestVersion { get; set; }
-    [J("name")] public string Name { get; set; }
-    [J("version")] public string Version { get; set; }
-    [J("author")] public string Author { get; set; }
-    [J("files")] public CFile[] Files { get; set; }
-    [J("overrides")] public string Overrides { get; set; }
+    [J("name")] public string? Name { get; set; }
+    [J("version")] public string? Version { get; set; }
+    [J("author")] public string? Author { get; set; }
+    [J("files")] public CFile[]? Files { get; set; }
+    [J("overrides")] public string? Overrides { get; set; }
 }
 public class CFile
 {
@@ -49,12 +49,12 @@ public class CFile
 
 public class Minecraft
 {
-    [J("version")] public string Version { get; set; }
-    [J("modLoaders")] public ModLoader[] ModLoaders { get; set; }
+    [J("version")] public string? Version { get; set; }
+    [J("modLoaders")] public ModLoader[]? ModLoaders { get; set; }
 }
 
 public class ModLoader
 {
-    [J("id")] public string Id { get; set; }
+    [J("id")] public string? Id { get; set; }
     [J("primary")] public bool Primary { get; set; }
 }

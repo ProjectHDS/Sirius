@@ -30,7 +30,7 @@ public interface IFormatTemplate
     /// The Minecraft folder path, usually called .minecraft/minecraft in your launcher instance folder.
     /// This MUST be filled, due to multi-architecture support requirements.
     /// </summary>
-    public string PackFileFolderPath { get; set; }
+    public string? PackFileFolderPath { get; set; }
 
     /// <summary>
     /// Pack file subfix, like zip in CurseForge format, mrpack in Modrinth format.
