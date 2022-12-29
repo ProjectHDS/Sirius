@@ -7,10 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sirius", "Sirius\Sirius.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sopdet", "Sopdet\Sopdet.csproj", "{5B005F68-A04C-4CA1-9CC7-EBFA3D2396FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yoonir.Curseforge", "Yoonir.Curseforge\Yoonir.Curseforge.csproj", "{90C25B43-F3AA-4C65-BF24-C89A6DE6D08C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yoonir.Modrinth", "Yoonir.Modrinth\Yoonir.Modrinth.csproj", "{9317B4BB-8579-481F-961A-3BFA52B9FB42}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,14 +21,6 @@ Global
 		{5B005F68-A04C-4CA1-9CC7-EBFA3D2396FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B005F68-A04C-4CA1-9CC7-EBFA3D2396FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B005F68-A04C-4CA1-9CC7-EBFA3D2396FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90C25B43-F3AA-4C65-BF24-C89A6DE6D08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90C25B43-F3AA-4C65-BF24-C89A6DE6D08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90C25B43-F3AA-4C65-BF24-C89A6DE6D08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90C25B43-F3AA-4C65-BF24-C89A6DE6D08C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9317B4BB-8579-481F-961A-3BFA52B9FB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9317B4BB-8579-481F-961A-3BFA52B9FB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9317B4BB-8579-481F-961A-3BFA52B9FB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9317B4BB-8579-481F-961A-3BFA52B9FB42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
